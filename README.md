@@ -16,7 +16,7 @@ A modern, native implementation of Raven's Progressive Matrices (IQ Test) for GN
 **Open RPM** is a native GTK4/Libadwaita application designed to administer the standard Raven's Progressive Matrices test. Built with Python and following GNOME Human Interface Guidelines, it delivers a polished, responsive experience across desktop environments.
 
 <p align="center">
-  <img src="screenshots/intro.png" alt="Start"/>
+  <img src="screenshots/intro.png" alt="Intro"/>
 </p>
 
 The application features an adaptive scoring algorithm that adjusts IQ estimates based on the user's age group, along with robust support for multiple languages and automatic theme detection.
@@ -38,7 +38,7 @@ The application features an adaptive scoring algorithm that adjusts IQ estimates
 
 The scoring system utilizes a pre-defined normative distribution. Raw scores are converted to a base IQ using Catmull-Rom spline interpolation. The final score is then adjusted by an age percentage factor to comply with standard psychometric practices.
 <p align="center">
-  <img src="screenshots/result.png" alt="Results" width="600"/>
+  <img src="screenshots/result.png" alt="Result"/>
 </p>
 
 Reliability is calculated by comparing the user's performance in Series A (the easiest series) against expected deviations. Significant anomalies may flag the result as potentially unreliable due to misunderstanding or inattention.
