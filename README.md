@@ -62,7 +62,7 @@ This document contains the detailed breakdown of the 5 series, correct answer ke
 
 ## License
 
-This project is licensed under the **GNU General Public License v3.0 or later**. See the [COPYING](COPYING) file for details.
+This project is licensed under the **GNU General Public License v3.0 or later**. See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
