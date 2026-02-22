@@ -23,6 +23,6 @@ configure_file(
   output: 'site.ikhlasulov.openrpm',
   configuration: bin_conf,
   install: true,
-  install_dir: get_option('bindir')
+  install_dir: get_option('bindir'),
   install_mode: 'rwxr-xr-x'
 )
