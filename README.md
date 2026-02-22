@@ -48,8 +48,6 @@ Reliability is calculated by comparing the user's performance in Series A (the e
 ### Build from Source
 
 ```bash
-git clone https://github.com/ikhlasulov-gb/open-rpm-gtk.git
-cd open-rpm-gtk
 flatpak-builder build build-aux/site.ikhlasulov.openrpm.json --user --install
 ```
 
