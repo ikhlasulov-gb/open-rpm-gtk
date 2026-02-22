@@ -1,0 +1,275 @@
+# Indonesian translation for Open RPM.
+# Copyright (C) 2026 Ikhlashulov
+# This file is distributed under the same license as the openrpm package.
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "menu.shortcuts"
+msgstr "Pintasan Keyboard"
+
+msgid "menu.about"
+msgstr "Tentang Open RPM"
+
+msgid "menu.quit"
+msgstr "Keluar"
+
+msgid "error.prefix"
+msgstr "Kesalahan: "
+
+msgid "error.py.missing"
+msgstr "Python 3 tidak terinstal di sistem."
+
+msgid "error.gi.missing"
+msgstr "Library PyGObject (gi) tidak ditemukan."
+
+msgid "error.window.missing"
+msgstr "File scripts/window.py tidak ditemukan."
+
+msgid "error.locale.missing"
+msgstr "File lokalisasi tidak ditemukan: "
+
+msgid "error.locale.fallback.missing"
+msgstr "File lokalisasi fallback tidak ditemukan: "
+
+msgid "error.locale.key.missing"
+msgstr "Kunci lokalisasi tidak ditemukan: "
+
+msgid "log.monitor.resolution"
+msgstr "Resolusi monitor: {screen_width}px, skala: {scale_factor:.2f}, jendela: {window_width}x{window_height}"
+
+msgid "log.selected_age"
+msgstr "Usia yang dipilih: {selected_age}"
+
+msgid "log.test_start"
+msgstr "Memulai tes..."
+
+msgid "test.question"
+msgstr "Pertanyaan"
+
+msgid "result.stats"
+msgstr "Statistik"
+
+msgid "result.series_title"
+msgstr "Hasil Seri"
+
+msgid "result.series_template"
+msgstr "Seri {s}"
+
+msgid "result.diagnosis"
+msgstr "Diagnosis"
+
+msgid "result.reliability"
+msgstr "Keandalan"
+
+msgid "result.degree"
+msgstr "Tingkat"
+
+msgid "result.status"
+msgstr "Status"
+
+msgid "result.recommendation"
+msgstr "Rekomendasi"
+
+msgid "app.title"
+msgstr "Tes Raven"
+
+msgid "app.subtitle"
+msgstr "Matriks Progresif Raven (RPM)"
+
+msgid "app.site_title"
+msgstr "Open RPM"
+
+msgid "intro.instruction_title"
+msgstr "Instruksi:"
+
+msgid "intro.instruction_text"
+msgstr "Anda akan diberikan 60 tugas (5 seri). Temukan pola logis dan pilih bagian yang hilang."
+
+msgid "intro.time"
+msgstr "Waktu: 20 menit."
+
+msgid "intro.age"
+msgstr "Usia:"
+
+msgid "intro.start_button"
+msgstr "Mulai"
+
+msgid "age.14_30"
+msgstr "14 - 30 tahun"
+
+msgid "age.31_35"
+msgstr "31 - 35 tahun"
+
+msgid "age.36_40"
+msgstr "36 - 40 tahun"
+
+msgid "age.41_45"
+msgstr "41 - 45 tahun"
+
+msgid "age.46_50"
+msgstr "46 - 50 tahun"
+
+msgid "age.51_55"
+msgstr "51 - 55 tahun"
+
+msgid "age.56_plus"
+msgstr "56+ tahun"
+
+msgid "test.progress_template"
+msgstr "Pertanyaan {q} dari 60 (Seri {s})"
+
+msgid "test.prev"
+msgstr "Kembali"
+
+msgid "test.next"
+msgstr "Berikutnya"
+
+msgid "test.finish"
+msgstr "Selesai"
+
+msgid "test.end"
+msgstr "Akhiri"
+
+msgid "test.series"
+msgstr "Seri"
+
+msgid "confirm.title"
+msgstr "Akhiri?"
+
+msgid "confirm.message"
+msgstr "Akhiri lebih awal? Hanya pertanyaan yang diselesaikan yang akan dihitung."
+
+msgid "confirm.cancel"
+msgstr "Batal"
+
+msgid "confirm.end"
+msgstr "Ya"
+
+msgid "result.results_title"
+msgstr "Hasil"
+
+msgid "result.label"
+msgstr "Hasil"
+
+msgid "result.age"
+msgstr "Usia"
+
+msgid "result.total_score"
+msgstr "Nilai"
+
+msgid "result.time_taken"
+msgstr "Waktu"
+
+msgid "result.series"
+msgstr "Seri"
+
+msgid "result.correct"
+msgstr "Benar"
+
+msgid "result.deviation"
+msgstr "Deviasi"
+
+msgid "result.return"
+msgstr "Kembali"
+
+msgid "result.interpretation"
+msgstr "Interpretasi"
+
+msgid "result.analysis"
+msgstr "Analisis &amp; Saran"
+
+msgid "diag.exceptional"
+msgstr "Inteligensi Luar Biasa, Menonjol"
+
+msgid "diag.high"
+msgstr "Tingkat Inteligensi Tinggi"
+
+msgid "diag.above_avg"
+msgstr "Inteligensi Di Atas Rata-rata"
+
+msgid "diag.avg"
+msgstr "Tingkat Inteligensi Rata-rata"
+
+msgid "diag.below_avg"
+msgstr "Inteligensi Di Bawah Rata-rata"
+
+msgid "diag.low"
+msgstr "Tingkat Inteligensi Rendah"
+
+msgid "diag.mild"
+msgstr "Kekurangan Mental Ringan"
+
+msgid "diag.moderate"
+msgstr "Kekurangan Mental Sedang"
+
+msgid "diag.severe"
+msgstr "Kekurangan Mental Berat"
+
+msgid "reliability.good"
+msgstr "Hasil yang dapat diandalkan."
+
+msgid "reliability.unreliable"
+msgstr "Deviasi signifikan di seluruh seri. Hasil mungkin tidak dapat diandalkan."
+
+msgid "reliability.defect"
+msgstr "Deviasi signifikan di Seri A. Kemungkinan defisit perhatian."
+
+msgid "reliability.low_reliability"
+msgstr "Nilai rendah. Indikator rendah dianggap kurang dapat diandalkan."
+
+msgid "degree.1"
+msgstr "95%+ (Derajat 1): Inteligensi Sangat Berkembang Luar Biasa"
+
+msgid "degree.2"
+msgstr "75% - 95% (Derajat 2): Inteligensi Luar Biasa"
+
+msgid "degree.3"
+msgstr "25% - 74% (Derajat 3): Inteligensi Rata-rata"
+
+msgid "degree.4"
+msgstr "5% - 24% (Derajat 4): Inteligensi Di Bawah Rata-rata"
+
+msgid "degree.5"
+msgstr "5% atau kurang (Derajat 5): Kapasitas Intelektual Cacat"
+
+msgid "rec.120"
+msgstr "Potensi luar biasa. Anda unggul dalam pengenalan pola. Terlibat dalam strategi, matematika, atau arsitektur. Tantangan memuaskan Anda."
+
+msgid "rec.110"
+msgstr "Kemampuan di atas rata-rata. Anda memproses informasi dengan cepat. Coba pelajari bahasa, coding, atau catur. Cocok untuk peran analitis."
+
+msgid "rec.90"
+msgstr "Inteligensi rata-rata. Anda dapat mempelajari keterampilan apa pun dengan latihan. Latihan teratur, membaca, dan teka-teki menjaga pikiran tetap tajam. Fondasi yang solid untuk karir apa pun."
+
+msgid "rec.80"
+msgstr "Sedikit di bawah rata-rata. Konsep abstrak mungkin sulit; tugas praktis lebih mudah. Latihan otak (Sudoku) dapat membantu meningkatkan kecepatan."
+
+msgid "rec.low"
+msgstr "Kesulitan dengan pola. Tidak mendefinisikan nilai Anda. Fokus pada tugas praktis. Konsultasikan dengan spesialis untuk pelatihan kognitif yang disesuaikan."
+
+msgid "translator-credits"
+msgstr "penerjemah"
+
+msgid "about.report_issue"
+msgstr "Laporkan Masalah"
+
+msgid "about.thanks"
+msgstr "Terima Kasih Kepada"
+
+msgid "app.description"
+msgstr "Implementasi modern dari Tes Matriks Progresif Raven (RPM) - tes kecerdasan non-verbal yang terstandarisasi"
+
+msgid "about.comments"
+msgstr "Aplikasi pengujian IQ modern berdasarkan Matriks Progresif Raven."
+
+# Shortcuts dialog
+msgid "Shortcuts"
+msgstr "Pintasan Keyboard"
+
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Keluar"

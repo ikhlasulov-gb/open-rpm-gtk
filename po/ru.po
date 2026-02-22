@@ -1,0 +1,275 @@
+# Russian translation for Open RPM.
+# Copyright (C) 2026 Ikhlashulov
+# This file is distributed under the same license as the openrpm package.
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "menu.shortcuts"
+msgstr "Комбинации клавиш"
+
+msgid "menu.about"
+msgstr "О приложении Open RPM"
+
+msgid "menu.quit"
+msgstr "Выход"
+
+msgid "error.prefix"
+msgstr "Ошибка: "
+
+msgid "error.py.missing"
+msgstr "Python 3 не установлен в системе."
+
+msgid "error.gi.missing"
+msgstr "Библиотека PyGObject (gi) не найдена."
+
+msgid "error.window.missing"
+msgstr "Файл scripts/window.py не найден."
+
+msgid "error.locale.missing"
+msgstr "Файл локализации не найден: "
+
+msgid "error.locale.fallback.missing"
+msgstr "Резервный файл локализации не найден: "
+
+msgid "error.locale.key.missing"
+msgstr "Ключ локализации не найден: "
+
+msgid "log.monitor.resolution"
+msgstr "Разрешение монитора: {screen_width}px, масштаб: {scale_factor:.2f}, окно: {window_width}x{window_height}"
+
+msgid "log.selected_age"
+msgstr "Выбранный возраст: {selected_age}"
+
+msgid "log.test_start"
+msgstr "Запуск теста..."
+
+msgid "test.question"
+msgstr "Вопрос"
+
+msgid "result.stats"
+msgstr "Статистика"
+
+msgid "result.series_title"
+msgstr "Результаты по сериям"
+
+msgid "result.series_template"
+msgstr "Серия {s}"
+
+msgid "result.diagnosis"
+msgstr "Диагноз"
+
+msgid "result.reliability"
+msgstr "Надёжность"
+
+msgid "result.degree"
+msgstr "Степень"
+
+msgid "result.status"
+msgstr "Статус"
+
+msgid "result.recommendation"
+msgstr "Рекомендации"
+
+msgid "app.title"
+msgstr "Тест Равена"
+
+msgid "app.subtitle"
+msgstr "Прогрессивные матрицы Равена (RPM)"
+
+msgid "app.site_title"
+msgstr "Open RPM"
+
+msgid "intro.instruction_title"
+msgstr "Инструкция:"
+
+msgid "intro.instruction_text"
+msgstr "Вам будут предложены 60 заданий (5 серий). Найдите логическую закономерность и выберите недостающий фрагмент."
+
+msgid "intro.time"
+msgstr "Время: 20 минут."
+
+msgid "intro.age"
+msgstr "Возраст:"
+
+msgid "intro.start_button"
+msgstr "Начать"
+
+msgid "age.14_30"
+msgstr "14 - 30 лет"
+
+msgid "age.31_35"
+msgstr "31 - 35 лет"
+
+msgid "age.36_40"
+msgstr "36 - 40 лет"
+
+msgid "age.41_45"
+msgstr "41 - 45 лет"
+
+msgid "age.46_50"
+msgstr "46 - 50 лет"
+
+msgid "age.51_55"
+msgstr "51 - 55 лет"
+
+msgid "age.56_plus"
+msgstr "56+ лет"
+
+msgid "test.progress_template"
+msgstr "Вопрос {q} из 60 (Серия {s})"
+
+msgid "test.prev"
+msgstr "Назад"
+
+msgid "test.next"
+msgstr "Далее"
+
+msgid "test.finish"
+msgstr "Завершить"
+
+msgid "test.end"
+msgstr "Закончить"
+
+msgid "test.series"
+msgstr "Серия"
+
+msgid "confirm.title"
+msgstr "Закончить?"
+
+msgid "confirm.message"
+msgstr "Закончить досрочно? Будут учтены только пройденные вопросы."
+
+msgid "confirm.cancel"
+msgstr "Отмена"
+
+msgid "confirm.end"
+msgstr "Да"
+
+msgid "result.results_title"
+msgstr "Результаты"
+
+msgid "result.label"
+msgstr "Результат"
+
+msgid "result.age"
+msgstr "Возраст"
+
+msgid "result.total_score"
+msgstr "Балл"
+
+msgid "result.time_taken"
+msgstr "Время"
+
+msgid "result.series"
+msgstr "Серия"
+
+msgid "result.correct"
+msgstr "Верно"
+
+msgid "result.deviation"
+msgstr "Отклонение"
+
+msgid "result.return"
+msgstr "Вернуться"
+
+msgid "result.interpretation"
+msgstr "Интерпретация"
+
+msgid "result.analysis"
+msgstr "Анализ и советы"
+
+msgid "diag.exceptional"
+msgstr "Исключительный, Выдающийся интеллект"
+
+msgid "diag.high"
+msgstr "Высокий уровень интеллекта"
+
+msgid "diag.above_avg"
+msgstr "Выше среднего интеллект"
+
+msgid "diag.avg"
+msgstr "Средний уровень интеллекта"
+
+msgid "diag.below_avg"
+msgstr "Ниже среднего интеллект"
+
+msgid "diag.low"
+msgstr "Низкий уровень интеллекта"
+
+msgid "diag.mild"
+msgstr "Лёгкая умственная отсталость"
+
+msgid "diag.moderate"
+msgstr "Умеренная умственная отсталость"
+
+msgid "diag.severe"
+msgstr "Тяжёлая умственная отсталость"
+
+msgid "reliability.good"
+msgstr "Надёжный результат."
+
+msgid "reliability.unreliable"
+msgstr "Значительные отклонения по сериям. Результаты могут быть ненадёжными."
+
+msgid "reliability.defect"
+msgstr "Значительное отклонение в серии A. Возможный дефицит внимания."
+
+msgid "reliability.low_reliability"
+msgstr "Низкий балл. Низкие показатели считаются менее надёжными."
+
+msgid "degree.1"
+msgstr "95%+ (Степень 1): Исключительно высокоразвитый интеллект"
+
+msgid "degree.2"
+msgstr "75% - 95% (Степень 2): Исключительный интеллект"
+
+msgid "degree.3"
+msgstr "25% - 74% (Степень 3): Средний интеллект"
+
+msgid "degree.4"
+msgstr "5% - 24% (Степень 4): Ниже среднего интеллект"
+
+msgid "degree.5"
+msgstr "5% или менее (Степень 5): Дефектное интеллектуальное развитие"
+
+msgid "rec.120"
+msgstr "Исключительный потенциал. Вы превосходно распознаёте паттерны. Займитесь стратегией, математикой или архитектурой. Задачи приносят удовлетворение."
+
+msgid "rec.110"
+msgstr "Способности выше среднего. Вы быстро обрабатываете информацию. Попробуйте изучение языков, программирование или шахматы. Подходит для аналитических ролей."
+
+msgid "rec.90"
+msgstr "Средний интеллект. Вы можете освоить любой навык с практикой. Регулярная практика, чтение и головоломки поддерживают ум в тонусе. Надёжная основа для любой карьеры."
+
+msgid "rec.80"
+msgstr "Немного ниже среднего. Абстрактные концепции могут быть трудными; практические задачи легче. Упражнения для мозга (судоку) могут помочь улучшить скорость."
+
+msgid "rec.low"
+msgstr "Трудности с паттернами. Это не определяет вашу ценность. Сосредоточьтесь на практических задачах. Проконсультируйтесь со специалистом для индивидуальной когнитивной тренировки."
+
+msgid "translator-credits"
+msgstr "переводчики"
+
+msgid "about.report_issue"
+msgstr "Сообщить о проблеме"
+
+msgid "about.thanks"
+msgstr "Благодарности"
+
+msgid "app.description"
+msgstr "Современная реализация теста прогрессивных матриц Равена (RPM) - стандартизированного невербального теста интеллекта"
+
+msgid "about.comments"
+msgstr "Современное приложение для тестирования IQ на основе прогрессивных матриц Равена."
+
+# Shortcuts dialog
+msgid "Shortcuts"
+msgstr "Комбинации клавиш"
+
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Выход"

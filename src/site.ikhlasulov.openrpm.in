@@ -1,0 +1,80 @@
+#!@PYTHON@
+
+import sys
+import importlib.util
+import importlib.abc
+import gi
+
+gi.require_version('Gtk', '4.0')
+gi.require_version('Adw', '1')
+
+from gi.repository import Gio, GLib
+
+# Setup resource paths
+resource = Gio.Resource.load('@datadir@/openrpm/site.ikhlasulov.openrpm.data.gresource')
+resource._register()
+
+src_resource = Gio.Resource.load('@datadir@/openrpm/site.ikhlasulov.openrpm.src.gresource')
+src_resource._register()
+
+# Custom import hook for GResource
+class GResourceImporter:
+    
+    RESOURCE_PREFIX = '/site/ikhlasulov/openrpm/py'
+    
+    @classmethod
+    def find_spec(cls, fullname, path, target=None):
+        # Convert module name to resource path
+        module_path = fullname.replace('.', '/')
+        resource_path = f'{cls.RESOURCE_PREFIX}/{module_path}.py'
+        
+        try:
+            # Check if resource exists
+            Gio.resources_lookup_data(resource_path, Gio.ResourceLookupFlags.NONE)
+        except GLib.Error:
+            # Try as package with __init__.py
+            init_path = f'{cls.RESOURCE_PREFIX}/{module_path}/__init__.py'
+            try:
+                Gio.resources_lookup_data(init_path, Gio.ResourceLookupFlags.NONE)
+                resource_path = init_path
+            except GLib.Error:
+                return None
+        
+        return importlib.util.spec_from_loader(
+            fullname,
+            GResourceLoader(resource_path),
+            origin=f'resource://{resource_path}'
+        )
+
+
+class GResourceLoader(importlib.abc.Loader):
+    
+    def __init__(self, resource_path):
+        self.resource_path = resource_path
+    
+    def create_module(self, spec):
+        return None  # Use default module creation
+    
+    def exec_module(self, module):
+        # Load source from resource
+        try:
+            bytes_data = Gio.resources_lookup_data(
+                self.resource_path,
+                Gio.ResourceLookupFlags.NONE
+            )
+            source = bytes_data.get_data().decode('utf-8')
+        except GLib.Error as e:
+            raise ImportError(f"Cannot load resource {self.resource_path}: {e.message}")
+        
+        # Compile and execute
+        code = compile(source, f'resource://{self.resource_path}', 'exec')
+        exec(code, module.__dict__)
+
+
+# Install the custom import hook
+sys.meta_path.insert(0, GResourceImporter)
+
+# Import and run main
+from main import main
+
+sys.exit(main(sys.argv))

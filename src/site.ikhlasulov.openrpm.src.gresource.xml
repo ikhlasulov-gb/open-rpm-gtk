@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/site/ikhlasulov/openrpm/py">
+    <file>__init__.py</file>
+    <file>main.py</file>
+    <file>window.py</file>
+    <file>test.py</file>
+    <file>result.py</file>
+    <file>calculations.py</file>
+    <file>locales.py</file>
+    <file>logger.py</file>
+  </gresource>
+</gresources>

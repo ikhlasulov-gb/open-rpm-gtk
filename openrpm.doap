@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name>Open RPM</name>
+  <shortname>openrpm</shortname>
+  <shortdesc>Raven's Progressive Matrices IQ Test for GNOME</shortdesc>
+  <description>Open RPM is a modern implementation of Raven's Progressive Matrices (RPM) - a standardized non-verbal intelligence test. This application provides a complete 60-question test with age-adjusted IQ calculation and detailed results analysis.</description>
+
+  <homepage rdf:resource="https://github.com/ikhlasulov-gb/open-rpm-gtk" />
+  <bug-database rdf:resource="https://github.com/ikhlasulov-gb/open-rpm-gtk/issues" />
+  <license rdf:resource="http://www.gnu.org/licenses/gpl-3.0.html" />
+
+  <programming-language>Python</programming-language>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Ikhlashulov</foaf:name>
+      <foaf:mbox rdf:resource="mailto:ikhlasulov@gmail.com" />
+      <gnome:userid>ikhlasulov</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+
+  <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
+  <platform rdf:resource="http://api.gnome.org/doap-extensions#linux" />
+
+</Project>

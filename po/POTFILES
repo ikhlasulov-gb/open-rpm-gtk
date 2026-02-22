@@ -1,0 +1,18 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+
+data/ui/window.ui
+data/ui/intro.ui
+data/ui/test.ui
+data/ui/result.ui
+data/ui/shortcuts.ui
+
+data/site.ikhlasulov.openrpm.desktop.in
+data/site.ikhlasulov.openrpm.metainfo.xml.in
+
+src/main.py
+src/window.py
+src/test.py
+src/result.py
+src/calculations.py
+src/locales.py
