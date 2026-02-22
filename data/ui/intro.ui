@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="libadwaita" version="1.0"/>
+
+    <object class="GtkBox" id="intro_page">
+        <property name="orientation">vertical</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+
+        <child>
+            <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="halign">center</property>
+                <property name="spacing">8</property>
+
+                <child>
+                    <object class="GtkLabel" id="title_label">
+                        <property name="label"></property>
+                        <style>
+                            <class name="title-1"/>
+                        </style>
+                    </object>
+                </child>
+
+                <child>
+                    <object class="GtkLabel" id="subtitle_label">
+                        <property name="label"></property>
+                        <style>
+                            <class name="title-4"/>
+                        </style>
+                        <property name="sensitive">False</property>
+                    </object>
+                </child>
+
+            </object>
+        </child>
+
+        <child>
+            <object class="AdwPreferencesGroup" id="prefs_group_info">
+
+                <child>
+                    <object class="AdwActionRow" id="instruction_row">
+                        <property name="title"></property>
+                        <property name="subtitle"></property>
+                        <property name="subtitle-lines">0</property>
+                    </object>
+                </child>
+
+                <child>
+                    <object class="AdwActionRow" id="time_row">
+                        <property name="title"></property>
+                    </object>
+                </child>
+
+            </object>
+        </child>
+
+        <child>
+            <object class="AdwPreferencesGroup" id="prefs_group_settings">
+
+                <child>
+                    <object class="AdwComboRow" id="age_combo">
+                        <property name="title"></property>
+                        <property name="model">
+                            <object class="GtkStringList">
+                                <items>
+                                </items>
+                            </object>
+                        </property>
+                        <property name="selected">0</property>
+                    </object>
+                </child>
+
+            </object>
+        </child>
+
+        <child>
+            <object class="GtkButton" id="start_button">
+                <property name="label"></property>
+                <property name="halign">center</property>
+                <style>
+                    <class name="pill"/>
+                    <class name="suggested-action"/>
+                </style>
+            </object>
+        </child>
+
+    </object>
+</interface>

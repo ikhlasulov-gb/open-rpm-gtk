@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="libadwaita" version="1.0"/>
+
+    <object class="AdwApplicationWindow" id="main_window">
+        <property name="title">Open RPM</property>
+        <property name="default-width">960</property>
+        <property name="default-height">720</property>
+        <property name="content">
+            <object class="AdwToolbarView" id="main_content">
+
+                <child type="top">
+                    <object class="AdwHeaderBar">
+                        <style>
+                            <class name="flat"/>
+                        </style>
+
+                        <property name="title-widget">
+                            <object class="GtkLabel" id="header_label">
+                                <property name="label">Open RPM</property>
+                                <style>
+                                    <class name="title"/>
+                                </style>
+                            </object>
+                        </property>
+
+                        <child type="end">
+                            <object class="GtkMenuButton" id="buttonMenu">
+                                <property name="menu-model">appMenu</property>
+                                <property name="icon-name">open-menu-symbolic</property>
+                                <property name="primary">True</property>
+                            </object>
+                        </child>
+
+                    </object>
+                </child>
+
+                <property name="content">
+                    <object class="AdwClamp" id="content_clamp">
+                        <property name="maximum-size">600</property>
+                        <property name="child">
+                            <object class="GtkScrolledWindow">
+                                <property name="hscrollbar-policy">never</property>
+                                <property name="vscrollbar-policy">automatic</property>
+                                <property name="hexpand">True</property>
+                                <property name="vexpand">True</property>
+                                <property name="child">
+                                    <object class="AdwBin" id="content_bin">
+                                    </object>
+                                </property>
+                            </object>
+                        </property>
+                    </object>
+                </property>
+
+            </object>
+        </property>
+    </object>
+
+    <menu id="appMenu">
+        <section>
+            <item>
+                <attribute name="label" translatable="yes">Keyboard Shortcuts</attribute>
+                <attribute name="action">app.shortcuts</attribute>
+            </item>
+            <item>
+                <attribute name="label" translatable="yes">About Open RPM</attribute>
+                <attribute name="action">app.about</attribute>
+            </item>
+            <item>
+                <attribute name="label" translatable="yes">Quit</attribute>
+                <attribute name="action">app.quit</attribute>
+            </item>
+        </section>
+    </menu>
+</interface>

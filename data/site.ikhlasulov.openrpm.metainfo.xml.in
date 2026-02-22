@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+
+        <id>site.ikhlasulov.openrpm.desktop</id>
+        <content_rating type="oars-1.1" />
+        <metadata_license>CC0-1.0</metadata_license>
+        <project_license>GPL-3.0-only</project_license>
+        <developer id="site.ikhlasulov">
+                <name translate="no">Ikhlashulov</name>
+        </developer>
+        <update_contact>ikhlasulov@gmail.com</update_contact>
+        <launchable type="desktop-id">site.ikhlasulov.openrpm.desktop</launchable>
+        <translation type="gettext">openrpm</translation>
+        <url type="homepage">https://github.com/ikhlasulov-gb/open-rpm-gtk</url>
+        <url type="bugtracker">https://github.com/ikhlasulov-gb/open-rpm-gtk/issues</url>
+        <url type="vcs-browser">https://github.com/ikhlasulov-gb/open-rpm-gtk</url>
+        <url type="translate">https://github.com/ikhlasulov-gb/open-rpm-gtk</url>
+        <url type="donation">https://github.com/ikhlasulov-gb/open-rpm-gtk#support</url>
+
+        <name>Open RPM</name>
+        <summary>Raven's Progressive Matrices IQ Test</summary>
+
+        <description>
+                <p>Open RPM is a modern implementation of Raven's Progressive Matrices (RPM) - a standardized non-verbal intelligence test. This application provides a complete 60-question test with age-adjusted IQ calculation and detailed results analysis.</p>
+                <p>Features:</p>
+                <ul>
+                        <li>60 progressive matrix questions across 5 series (A-E)</li>
+                        <li>20-minute timed test with progress tracking</li>
+                        <li>Age-adjusted IQ calculation using spline interpolation</li>
+                        <li>Detailed diagnosis and recommendations</li>
+                        <li>Series-by-series analysis with deviation tracking</li>
+                        <li>Multi-language support (English, Russian, Indonesian)</li>
+                        <li>Modern GNOME interface with GTK4 and Libadwaita</li>
+                </ul>
+        </description>
+
+        <branding>
+                <color type="primary" scheme_preference="light">#e8f4fc</color>
+                <color type="primary" scheme_preference="dark">#1e3a5f</color>
+        </branding>
+
+        <screenshots>
+                <screenshot type="default">
+                        <caption>Intro screen with test instructions</caption>
+                        <image>https://raw.githubusercontent.com/ikhlasulov-gb/open-rpm-gtk/main/screenshots/intro.png</image>
+                </screenshot>
+                <screenshot>
+                        <caption>Test in progress with matrix question</caption>
+                        <image>https://raw.githubusercontent.com/ikhlasulov-gb/open-rpm-gtk/main/screenshots/test.png</image>
+                </screenshot>
+                <screenshot>
+                        <caption>Results with IQ score and analysis</caption>
+                        <image>https://raw.githubusercontent.com/ikhlasulov-gb/open-rpm-gtk/main/screenshots/result.png</image>
+                </screenshot>
+        </screenshots>
+
+        <requires>
+                <display_length compare="ge">360</display_length>
+        </requires>
+
+        <recommends>
+                <control>pointing</control>
+                <control>keyboard</control>
+                <control>touch</control>
+        </recommends>
+
+        <releases>
+                <release version="1.0.0" date="2026-02-22">
+                        <description translate="no">
+                                <ul>
+                                        <li>Initial release with GNOME standards compliance</li>
+                                        <li>Flatpak support</li>
+                                        <li>60-question Raven's Progressive Matrices test</li>
+                                        <li>Age-adjusted IQ calculation</li>
+                                        <li>Multi-language support</li>
+                                </ul>
+                        </description>
+                </release>
+        </releases>
+
+</component>

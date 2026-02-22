@@ -1,0 +1,17 @@
+.question-frame {
+    border: 1px solid @borders;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: @card_bg_color;
+}
+
+.iq-frame {
+    border: 1px solid @borders;
+    border-radius: 12px;
+    padding: 12px 24px;
+    background-color: @card_bg_color;
+}
+
+.invert-image {
+    filter: invert(100%);
+}

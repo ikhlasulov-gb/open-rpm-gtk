@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <requires lib="libadwaita" version="1.0"/>
+
+    <object class="GtkBox" id="test_page">
+        <property name="orientation">vertical</property>
+        <property name="halign">fill</property>
+        <property name="valign">fill</property>
+        <property name="spacing">12</property>
+        <property name="margin-start">24</property>
+        <property name="margin-end">24</property>
+        <property name="margin-top">12</property>
+        <property name="margin-bottom">12</property>
+
+        <child>
+            <object class="GtkBox" id="content_box">
+                <property name="orientation">vertical</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="spacing">8</property>
+                <property name="hexpand">False</property>
+                <property name="vexpand">True</property>
+
+                <child>
+                    <object class="GtkBox" id="progress_container">
+                        <property name="orientation">vertical</property>
+                        <property name="halign">center</property>
+                        <property name="spacing">8</property>
+
+                        <child>
+                            <object class="GtkProgressBar" id="timer_progress">
+                                <property name="fraction">1.0</property>
+                                <property name="show-text">False</property>
+                            </object>
+                        </child>
+
+                        <child>
+                            <object class="GtkLabel" id="progress_label">
+                                <property name="label"></property>
+                                <property name="halign">center</property>
+                                <style>
+                                    <class name="caption-heading"/>
+                                </style>
+                            </object>
+                        </child>
+
+                    </object>
+                </child>
+
+                <child>
+                    <object class="GtkImage" id="question_image">
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="pixel-size">400</property>
+                        <style>
+                            <class name="question-frame"/>
+                        </style>
+                    </object>
+                </child>
+
+                <child>
+                    <object class="GtkGrid" id="options_grid">
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="column-spacing">8</property>
+                        <property name="row-spacing">8</property>
+                        <property name="column-homogeneous">True</property>
+                        <property name="row-homogeneous">True</property>
+                    </object>
+                </child>
+
+                <child>
+                    <object class="GtkBox" id="navigation_container">
+                        <property name="orientation">horizontal</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                        <property name="spacing">8</property>
+
+                        <child>
+                            <object class="GtkButton" id="prev_button">
+                                <property name="label"></property>
+                                <property name="sensitive">False</property>
+                                <property name="hexpand">True</property>
+                                <style>
+                                    <class name="pill"/>
+                                </style>
+                            </object>
+                        </child>
+
+                        <child>
+                            <object class="GtkButton" id="end_button">
+                                <property name="label"></property>
+                                <property name="hexpand">True</property>
+                                <style>
+                                    <class name="pill"/>
+                                    <class name="destructive-action"/>
+                                </style>
+                            </object>
+                        </child>
+
+                        <child>
+                            <object class="GtkButton" id="next_button">
+                                <property name="label"></property>
+                                <property name="hexpand">True</property>
+                                <style>
+                                    <class name="pill"/>
+                                    <class name="suggested-action"/>
+                                </style>
+                            </object>
+                        </child>
+
+                    </object>
+                </child>
+
+            </object>
+        </child>
+
+    </object>
+
+</interface>
