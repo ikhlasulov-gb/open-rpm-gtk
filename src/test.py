@@ -220,6 +220,9 @@ class TestController:
                 if parent == self.options_grid:
                     self.options_grid.remove(btn)
 
+            self.options_grid.set_column_homogeneous(False)
+            self.options_grid.queue_resize()
+
         for i in range(1, 9):
             btn = self._option_buttons[i - 1]
             if i <= count:
@@ -252,6 +255,10 @@ class TestController:
                     parent = btn.get_parent()
                     if parent == self.options_grid:
                         self.options_grid.remove(btn)
+
+        if need_rebuild and self.options_grid:
+            self.options_grid.set_column_homogeneous(True)
+            self.options_grid.queue_resize()
 
         self._current_options_count = count
 
