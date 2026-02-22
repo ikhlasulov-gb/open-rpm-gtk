@@ -28,8 +28,13 @@
       "builddir": true,
       "sources": [
         {
-          "type": "dir",
-          "path": ".."
+          "type": "git",
+          "url": "https://github.com/ikhlasulov-gb/open-rpm-gtk.git",
+          "tag": "Release",
+          "x-checker-data": {
+            "type": "git",
+            "tag-pattern": "^Release$"
+          }
         }
       ]
     }
