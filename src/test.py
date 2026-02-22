@@ -100,6 +100,7 @@ class TestController:
         self.next_btn = b.get_object('next_button')
 
     def _create_option_buttons(self):
+        """Create 8 option buttons."""
         for i in range(1, 9):
             btn = Gtk.Button(label=str(i))
             btn.add_css_class('pill')
@@ -156,6 +157,14 @@ class TestController:
         self.answers = {}
         self.time_left = TOTAL_TIME
         self._current_theme = get_theme_dir()
+        self._current_cols = 0
+        self._current_options_count = 0
+
+        # Reset all buttons - hide all, remove styles
+        for btn in self._option_buttons:
+            btn.set_visible(False)
+            if btn.has_css_class('suggested-action'):
+                btn.remove_css_class('suggested-action')
 
         if self.timer_progress:
             self.timer_progress.set_fraction(1.0)
@@ -214,18 +223,18 @@ class TestController:
         need_rebuild = (cols != self._current_cols)
         self._current_cols = cols
 
-        if need_rebuild and self.options_grid:
-            for btn in self._option_buttons:
-                parent = btn.get_parent()
-                if parent == self.options_grid:
-                    self.options_grid.remove(btn)
+        if self.options_grid:
+            # ALWAYS clear grid completely first
+            while child := self.options_grid.get_first_child():
+                self.options_grid.remove(child)
 
+            # Force grid to reset column geometry
             self.options_grid.set_column_homogeneous(False)
             self.options_grid.queue_resize()
 
-        for i in range(1, 9):
-            btn = self._option_buttons[i - 1]
-            if i <= count:
+            # Rebuild with new layout
+            for i in range(1, count + 1):
+                btn = self._option_buttons[i - 1]
                 btn.set_label(str(i))
                 btn.set_visible(True)
 
@@ -237,26 +246,24 @@ class TestController:
                 elif not is_selected and has_suggested:
                     btn.remove_css_class('suggested-action')
 
-                if need_rebuild:
-                    old_handler = self._click_handlers.get(btn)
-                    if old_handler:
-                        try:
-                            btn.disconnect(old_handler)
-                        except Exception as e:
-                            log.debug(f"Click handler already disconnected: {e}")
-                    self._click_handlers[btn] = btn.connect('clicked', self._select, i)
+                old_handler = self._click_handlers.get(btn)
+                if old_handler:
+                    try:
+                        btn.disconnect(old_handler)
+                    except Exception:
+                        pass
+                self._click_handlers[btn] = btn.connect('clicked', self._select, i)
 
-                    row, col = (i - 1) // cols, (i - 1) % cols
-                    if self.options_grid:
-                        self.options_grid.attach(btn, col, row, 1, 1)
-            else:
+                row, col = (i - 1) // cols, (i - 1) % cols
+                self.options_grid.attach(btn, col, row, 1, 1)
+
+            # Hide extra buttons (7, 8 for series A, B)
+            for i in range(count + 1, 9):
+                btn = self._option_buttons[i - 1]
                 btn.set_visible(False)
-                if need_rebuild:
-                    parent = btn.get_parent()
-                    if parent == self.options_grid:
-                        self.options_grid.remove(btn)
+                if btn.has_css_class('suggested-action'):
+                    btn.remove_css_class('suggested-action')
 
-        if need_rebuild and self.options_grid:
             self.options_grid.set_column_homogeneous(True)
             self.options_grid.queue_resize()
 
