@@ -48,7 +48,7 @@ Reliability is calculated by comparing the user's performance in Series A (the e
 ### Build from Source
 
 ```bash
-flatpak-builder build build-aux/site.ikhlasulov.openrpm.json --user --install
+curl -sSL https://raw.githubusercontent.com/ikhlasulov-gb/open-rpm-gtk/main/build-aux/site.ikhlasulov.openrpm.json > site.ikhlasulov.openrpm.json && flatpak-builder build site.ikhlasulov.openrpm.json --install --user
 ```
 
 ## Documentation
