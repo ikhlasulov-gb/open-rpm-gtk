@@ -67,6 +67,7 @@
         <releases>
                 <release version="1.0.0" date="2026-02-22">
                         <description translate="no">
+                                <p>Initial release of Open RPM features:</p>
                                 <ul>
                                         <li>Initial release with GNOME standards compliance</li>
                                         <li>Flatpak support</li>
