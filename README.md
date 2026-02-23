@@ -45,10 +45,52 @@ Reliability is calculated by comparing the user's performance in Series A (the e
 
 ## Installation
 
-### Build from Source
+### Flatpak Method
+
+To build and install the application, you will need Flatpak, Git, and Flatpak-Builder. Choose the commands according to your distribution:
+
+#### 1. Install Prerequisites
+
+**Debian / Ubuntu / Mint**
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ikhlasulov-gb/open-rpm-gtk/main/build-aux/site.ikhlasulov.openrpm.json > site.ikhlasulov.openrpm.json && flatpak-builder build site.ikhlasulov.openrpm.json --install --user
+sudo apt update
+sudo apt install flatpak git flatpak-builder
+
+```
+
+**Fedora / RHEL**
+
+```bash
+sudo dnf install flatpak git flatpak-builder
+
+```
+
+#### 2. Environment Setup
+
+Add the Flathub repository and install the required GNOME platform:
+
+```bash
+# Add Flathub repository
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+# Install Runtime
+flatpak install flathub org.gnome.Platform/x86_64/49
+
+```
+
+### Build and Install
+
+Once the environment is set up, run the following commands to clone and install the app:
+
+```bash
+# Clone the repository
+git clone https://github.com/ikhlasulov-gb/open-rpm-gtk
+cd open-rpm-gtk
+
+# Build and install locally
+flatpak-builder build build-aux/site.ikhlasulov.openrpm.json --user --install
+
 ```
 
 ## Documentation
