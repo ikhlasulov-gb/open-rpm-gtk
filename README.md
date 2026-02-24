@@ -47,18 +47,43 @@ Reliability is calculated by comparing the user's performance in Series A (the e
 
 ### Flat Store (Recommended)
 
+<img width='240' alt='Flat Store' src='https://flatstore.ikhlasulov.site/flatstore/images/buttom.svg'/>
+
 The easiest way to install Open RPM is via the Flat Store repository. All required runtimes and dependencies are handled automatically.
 
-Run the following commands in your terminal:
+**1. Install Flatpak**
+
+First, ensure Flatpak is installed on your system.
+
+**Debian / Ubuntu / Mint**
+```bash
+sudo apt update
+sudo apt install flatpak
+```
+
+**Fedora / RHEL**
+```bash
+sudo dnf install flatpak
+```
+
+**2. Install Open RPM**
+
+Add the repositories and install the application:
 
 ```bash
+# Add Flathub repository for runtime
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+# Add Flat Store repository for application
 flatpak remote-add --if-not-exists flatstore https://flatstore.ikhlasulov.site/flatstore/flatstore.flatpakrepo
+
+# Install Open RPM
 flatpak install flatstore site.ikhlasulov.openrpm
 ```
 
 ### Manual Flatpak Build
 
-If you prefer to build the application from source, you will need Flatpak, Git, and Flatpak-Builder. Choose the commands according to your distribution:
+To build and install the application from source, you will need Flatpak, Git, and Flatpak-Builder. Choose the commands according to your distribution:
 
 #### 1. Install Prerequisites
 
