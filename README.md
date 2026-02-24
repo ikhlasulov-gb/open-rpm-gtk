@@ -45,9 +45,20 @@ Reliability is calculated by comparing the user's performance in Series A (the e
 
 ## Installation
 
-### Flatpak Method
+### Flat Store (Recommended)
 
-To build and install the application, you will need Flatpak, Git, and Flatpak-Builder. Choose the commands according to your distribution:
+The easiest way to install Open RPM is via the Flat Store repository. All required runtimes and dependencies are handled automatically.
+
+Run the following commands in your terminal:
+
+```bash
+flatpak remote-add --if-not-exists flatstore https://flatstore.ikhlasulov.site/flatstore/flatstore.flatpakrepo
+flatpak install flatstore site.ikhlasulov.openrpm
+```
+
+### Manual Flatpak Build
+
+If you prefer to build the application from source, you will need Flatpak, Git, and Flatpak-Builder. Choose the commands according to your distribution:
 
 #### 1. Install Prerequisites
 
@@ -79,7 +90,7 @@ flatpak install flathub org.gnome.Platform/x86_64/49
 
 ```
 
-### Build and Install
+#### 3. Build and Install
 
 Once the environment is set up, run the following commands to clone and install the app:
 
