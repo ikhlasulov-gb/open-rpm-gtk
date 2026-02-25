@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Open RPM
-GenericName=Take the classic Raven's Progressive Matrices IQ test.
+GenericName=Take the classic Raven's Progressive Matrices IQ test
 Exec=site.ikhlasulov.openrpm
 Icon=site.ikhlasulov.openrpm
 Terminal=false
