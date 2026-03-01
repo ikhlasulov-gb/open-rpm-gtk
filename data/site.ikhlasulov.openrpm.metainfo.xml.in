@@ -65,7 +65,7 @@
         </recommends>
 
         <releases>
-                <release version="1.0.2" date="2026-02-23">
+                <release version="1.0.3" date="2026-02-23">
                         <description>
                                 <p>Minor fixes and stability improvements.</p>
                         </description>

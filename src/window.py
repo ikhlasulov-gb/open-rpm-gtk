@@ -134,7 +134,7 @@ class OpenRpmApp(Adw.Application):
         dialog = Adw.AboutDialog()
         dialog.set_application_name('Open RPM')
         dialog.set_application_icon('site.ikhlasulov.openrpm')
-        dialog.set_version('1.0.2')
+        dialog.set_version('1.0.3')
         dialog.set_comments(locales.get_text('about.comments'))
         dialog.set_developer_name('Ikhlasulov')
         dialog.set_license_type(Gtk.License.GPL_3_0)

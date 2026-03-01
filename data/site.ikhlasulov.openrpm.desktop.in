@@ -1,11 +1,15 @@
 [Desktop Entry]
 Name=Open RPM
 GenericName=Take the classic Raven's Progressive Matrices IQ test
+GenericName[ru]=Пройдите классический тест прогрессивных матриц Равена
+GenericName[id]=Ikuti tes IQ Matriks Progresif Raven yang klasik
 Exec=site.ikhlasulov.openrpm
 Icon=site.ikhlasulov.openrpm
 Terminal=false
 Type=Application
 Categories=Education;
 Keywords=Raven;Test;IQ;Intelligence;Matrices;Psychology;
+Keywords[ru]=Равен;Тест;IQ;Интеллект;Матрицы;Психология;
+Keywords[id]=Raven;Tes;IQ;Kecerdasan;Matriks;Psikologi;
 X-Purism-FormFactor=Workstation;
 StartupNotify=true
